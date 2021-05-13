@@ -1,5 +1,6 @@
 name: Aplicação Django
 
+
 on: [pull_request]
 
 jobs:
@@ -11,10 +12,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 3.9
+    - name: Set up Python 3.9.5
       uses: actions/setup-python@v1
       with:
-        python-version: 3.9.4
+        python-version: 3.9.5
     - name: Instalar Dependências
       run:
         pip install pipenv
